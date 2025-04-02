@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BrowserStack Suite" parallel="tests" thread-count="5">
+    <test name="Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcases.AssignmentTest"/>
+        </classes>
+    </test>
+    <test name="Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testcases.AssignmentTest"/>
+        </classes>
+    </test>
+    <test name="Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testcases.AssignmentTest"/>
+        </classes>
+    </test>
+    <test name="Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="testcases.AssignmentTest"/>
+        </classes>
+    </test>
+    <test name="Mobile_Chrome">
+        <parameter name="browser" value="chrome_mobile"/>
+        <classes>
+            <class name="testcases.AssignmentTest"/>
+        </classes>
+    </test>
+</suite>

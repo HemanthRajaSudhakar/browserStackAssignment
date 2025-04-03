@@ -3,10 +3,12 @@ package utilities;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
+import seleniumActions.Actions;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -26,7 +28,7 @@ import java.util.Properties;
 public class UtilityMethods {
     private static String fileSeperator = System.getProperty("file.separator");
     private static Properties properties = new Properties();
-    private static Logger log = Logger.getLogger("UtilityMethods");
+    private static final Logger log = LogManager.getLogger(UtilityMethods.class);
     private static final String API_URL = "https://rapid-translate-multi-traduction.p.rapidapi.com/t";
     private static final String API_KEY = "01fe57e725msh459896ebceb25acp13b943jsnf38a75b0c8be"; // Replace with your actual RapidAPI key
 

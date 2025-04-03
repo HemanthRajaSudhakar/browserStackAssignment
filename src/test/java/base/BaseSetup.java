@@ -3,12 +3,8 @@ package base;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -25,7 +21,6 @@ public class BaseSetup {
     public static final String USERNAME = "hemanthraja_livsaU";
     public static final String ACCESS_KEY = "3yqf5ns63pkZHRpGUzKs";
     public static final String BROWSER_STACK_URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub.browserstack.com/wd/hub";
-    public static final String RemoteURL = "http://10.20.50.92:4444/wd/hub";
 
     @Parameters({"browser"})
     @BeforeMethod(alwaysRun = true)

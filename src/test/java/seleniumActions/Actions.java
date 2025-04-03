@@ -5,15 +5,19 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import testcases.AssignmentTest;
 import utilities.TimeOuts;
-import org.apache.log4j.Logger;
 
 import java.time.Duration;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Actions implements TimeOuts{
     public WebDriver driver;
-    private Logger log = Logger.getLogger("Actions");
+    private static final Logger log = LogManager.getLogger(Actions.class);
+
+
 
     public Actions(WebDriver driver){
         this.driver =driver;

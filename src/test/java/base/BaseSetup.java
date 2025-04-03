@@ -59,7 +59,6 @@ public class BaseSetup {
                     ffbstackOptions.put("browserVersion", "latest");
                     ffbstackOptions.put("userName", "hemanthraja_livsaU");
                     ffbstackOptions.put("accessKey", "3yqf5ns63pkZHRpGUzKs");
-                    ffbstackOptions.put("seleniumVersion", "4.29.0");
                     ffcapabilities.setCapability("bstack:options", ffbstackOptions);
                     driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), ffcapabilities);
                     driver.manage().window().maximize();
